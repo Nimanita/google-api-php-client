@@ -1,3 +1,14 @@
+
+
+
+
+
+
+
+
+
+
+
 <?php
 /*
  * Copyright 2011 Google Inc.
@@ -89,9 +100,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && $client->getAccessToken()) {
     fclose($fh);
   }
 
-  $file = new Google\Service\Drive\DriveFile();
-  $file->name = "Big File";
-  $chunkSizeBytes = 1 * 1024 * 1024;
+
 
   // Call the API with the media upload, defer so it doesn't immediately return.
   $client->setDefer(true);
