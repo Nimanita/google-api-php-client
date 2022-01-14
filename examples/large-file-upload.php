@@ -15,6 +15,27 @@
  * limitations under the License.
  */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 include_once __DIR__ . '/../vendor/autoload.php';
 include_once "templates/base.php";
 
@@ -28,10 +49,29 @@ if (!$oauth_credentials = getOAuthCredentialsFile()) {
   return;
 }
 
-/************************************************
- * The redirect URI is to the current page, e.g:
- * http://localhost:8080/large-file-upload.php
- ************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 $redirect_uri = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];
 
 $client = new Google\Client();
